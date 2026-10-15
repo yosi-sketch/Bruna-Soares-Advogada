@@ -1,9 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { Cinzel, Montserrat } from "next/font/google";
+import { Cormorant_Garamond, Montserrat } from "next/font/google";
 import { brand } from "./lib/brand";
 import "./globals.css";
 
-const displayFont = Cinzel({
+const displayFont = Cormorant_Garamond({
   variable: "--font-display-face",
   subsets: ["latin"],
   weight: ["400", "500", "600"],
@@ -20,14 +20,14 @@ const bodyFont = Montserrat({
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 const metadataBase = siteUrl ? new URL(siteUrl) : undefined;
 const shareImage = brand.logo;
-const title = "Botinha & Diniz Advocacia | Advogadas em Ibirité, MG";
-const description = "Orientação jurídica em Ibirité, MG. Direito de Família, Inventários, Imobiliário, Previdenciário, Cível e Constitucional. Converse pelo WhatsApp: (31) 99591-7890.";
+const title = "Bruna Soares | Advogada Familiarista em Piumhi, MG";
+const description = "Advocacia e consultoria jurídica com Dra. Bruna Soares em Piumhi, MG. Cuidado e clareza nas questões de família. WhatsApp: (37) 99863-5592.";
 
 export const metadata: Metadata = {
   ...(metadataBase ? { metadataBase } : {}),
   title,
   description,
-  keywords: ["Botinha & Diniz Advocacia", "advogadas em Ibirité", "Priscila Botinha", "Kethelen Diniz", "direito de família", "inventários", "direito imobiliário", "direito previdenciário", "direito cível", "direito constitucional"],
+  keywords: ["Bruna Soares", "advogada em Piumhi", "advogada familiarista", "direito de família", "divórcio", "guarda", "pensão alimentícia", "consultoria jurídica"],
   icons: { icon: [{ url: brand.logo, type: "image/png" }], apple: [{ url: brand.logo, type: "image/png" }] },
   openGraph: {
     title,
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
       ? [
           {
             url: shareImage,
-            width: 1774,
-            height: 887,
+            width: 1998,
+            height: 787,
             alt: brand.businessName,
           },
         ]
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#161310",
+  themeColor: "#fff7f1",
 };
 
 export default function RootLayout({

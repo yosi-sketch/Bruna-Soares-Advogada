@@ -1,36 +1,38 @@
 @import "tailwindcss";
 
-/* Tailwind CSS 4: configuração do tema em CSS.
-   Amostragem do logo BD (alpha >= 240, quantização 16): marfim #f0f0e0,
-   dourado #d0c0a0 e bronze #604020. Demais tons e neutros são derivados. */
+/* Tailwind CSS 4: tema em CSS.
+   Logo original: amostras opacas quantizadas em passos de 16.
+   Rosé #f0b090, cobre #a06040, marfim #fff0e0 e marrom #301000.
+   Os demais tons são derivados para leitura e contraste. */
 :root {
   color-scheme: light;
-  --brand-ink: #30271f;
-  --brand-ink-soft: #6b5e50;
-  --brand-paper: #f8f5ef;
+  --brand-ink: #301e17;
+  --brand-ink-soft: #70594d;
+  --brand-paper: #fff7f1;
 }
 @theme inline {
-  --font-display: var(--font-display-face), "Cinzel", Georgia, serif;
+  --font-display: var(--font-display-face), "Cormorant Garamond", Georgia, serif;
   --font-sans: var(--font-body), "Montserrat", system-ui, sans-serif;
-  --color-ink: #30271f;
-  --color-ink-soft: #6b5e50;
+  --color-ink: #301e17;
+  --color-ink-soft: #70594d;
   --color-paper: #ffffff;
-  --color-ivory: #f8f5ef;
-  --color-linen: #e9e1d3;
-  --color-brand-50: #f2ede4;
-  --color-brand-100: #f0f0e0;
-  --color-brand-200: #e0d0b0;
-  --color-brand-300: #d0c0a0;
-  --color-brand-400: #c0ab85;
-  --color-brand-500: #a78a5d;
-  --color-brand-600: #80613b;
-  --color-brand-700: #70512e;
-  --color-brand-800: #604020;
-  --color-brand-900: #30271f;
-  --color-brand-950: #161310;
-  --shadow-card: 0 18px 48px rgb(48 39 31 / 18%);
+  --color-ivory: #fff7f1;
+  --color-linen: #f1e0d4;
+  --color-brand-50: #fcf0e8;
+  --color-brand-100: #ffe0d0;
+  --color-brand-200: #ffd0b0;
+  --color-brand-300: #f0b090;
+  --color-brand-400: #d99878;
+  --color-brand-500: #bc7b5a;
+  --color-brand-600: #a06040;
+  --color-brand-700: #87523b;
+  --color-brand-800: #653d2d;
+  --color-brand-900: #301000;
+  --color-brand-950: #241611;
+  --shadow-card: 0 18px 48px rgb(48 30 23 / 18%);
 }
 html { scroll-padding-top: 2rem; }
+img { max-width: 100%; }
 body {
   background: var(--brand-paper);
   color: var(--brand-ink);
@@ -43,7 +45,7 @@ h1, h2 { text-wrap: balance; }
 .nav-link {
   position: relative;
   padding-block: 0.75rem;
-  color: var(--color-brand-100);
+  color: var(--color-brand-800);
   font-size: 0.8rem;
   font-weight: 600;
   transition: color 180ms ease;
@@ -58,17 +60,17 @@ h1, h2 { text-wrap: balance; }
   transform-origin: left;
   transition: transform 180ms ease;
 }
-.nav-link:hover { color: var(--color-brand-300); }
+.nav-link:hover { color: var(--color-brand-700); }
 .nav-link:hover::after { transform: scaleX(1); }
 .footer-link { transition: color 180ms ease; }
 .footer-link:hover { color: var(--color-brand-300); }
 :focus-visible { outline: 2px solid var(--color-brand-600); outline-offset: 4px; }
-:is(.brand-hero, .brand-header, .brand-footer, .bg-brand-950) :focus-visible { outline-color: var(--color-brand-200); }
+:is(.brand-hero, .brand-footer, .bg-brand-950) :focus-visible { outline-color: var(--color-brand-200); }
 .brand-header #mobile-navigation :focus-visible { outline-color: var(--color-brand-800); }
 .brand-hero .text-ink-soft { color: var(--color-brand-100); }
 .brand-hero .text-ink { color: var(--color-ivory); }
 .brand-hero .text-brand-700 { color: var(--color-brand-300); }
-.brand-hero .border-ink\/10 { border-color: rgb(208 192 160 / 22%); }
+.brand-hero .border-ink\/10 { border-color: rgb(240 176 144 / 22%); }
 
 ::-webkit-scrollbar { width: 9px; }
 ::-webkit-scrollbar-track { background: var(--color-brand-50); }
@@ -90,9 +92,9 @@ h1, h2 { text-wrap: balance; }
 
 .brand-footer .text-ink-soft { color: var(--color-brand-100); }
 .brand-footer .text-brand-700 { color: var(--color-brand-300); }
-.brand-footer .border-ink\/15 { border-color: rgb(208 192 160 / 22%); }
+.brand-footer .border-ink\/15 { border-color: rgb(240 176 144 / 22%); }
 .hero-signature {
-  border: 1px solid rgb(208 192 160 / 35%);
+  border: 1px solid rgb(240 176 144 / 35%);
   animation: signature-reveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 @keyframes signature-reveal {

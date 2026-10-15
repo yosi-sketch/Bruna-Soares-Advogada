@@ -1,4 +1,4 @@
-# Botinha & Diniz Advocacia
+# Bruna Soares — Advocacia e Consultoria Jurídica
 
 <!-- impeccable:product-schema 1 -->
 
@@ -6,29 +6,27 @@
 web
 
 ## Users
-Pessoas e famílias em Ibirité, Minas Gerais, que procuram orientação sobre família, patrimônio, previdência e outros direitos.
+Pessoas e famílias em Piumhi, Minas Gerais, que procuram orientação para questões familiares.
 
 ## Product Purpose
-Apresentar o escritório, suas sócias e áreas de atuação; facilitar o contato direto por WhatsApp, telefone, Instagram e a localização no Ibirité Mall.
+Apresentar a Dra. Bruna Soares, sua atuação em Direito de Família e facilitar o contato por WhatsApp, telefone, Instagram e localização.
 
 ## Positioning
-Atendimento com escuta, atenção individual, comunicação clara e sigilo. Não prometer resultados nem inventar experiência, horários, e-mail ou credenciais.
+Escuta, cuidado, comunicação clara e sigilo. Conteúdo institucional sem promessa de resultado nem credenciais inventadas.
 
 ## Operating Context
-Site institucional pt-BR em uma página. Início, atuação, Sobre com as duas sócias, acompanhamento, FAQ, avaliações, contato e rodapé. Seis áreas com detalhes em diálogos acessíveis: Família, Inventários e Sucessões, Imobiliário, Previdenciário, Cível e Constitucional. Manter responsividade, foco visível, ciclo de foco nos diálogos, Escape, retorno de foco, fundo inert e movimento reduzido.
+Página pt-BR existente: início, atuação, sobre, acompanhamento, FAQ, avaliações, contato e rodapé. Seis temas familiares com detalhes em diálogos: divórcio, guarda, alimentos, união estável, partilha e consultoria. Foco no fechamento, ciclo Tab/Shift+Tab, Escape, retorno de foco, fundo inert, bloqueio de rolagem e movimento reduzido.
 
 ## Capabilities and Constraints
-Next.js 16.3.5, React, Tailwind CSS 4 (configuração em @theme inline de app/globals.css), Framer Motion e Lucide. Consultar node_modules/next/dist/docs antes de alterar APIs Next.js. Dados em app/lib/brand.ts. NEXT_PUBLIC_SITE_URL deve receber o domínio real quando disponível; sem domínio não habilitar imagens sociais com URL inventada.
+Next.js 16.3.5, React 19, Tailwind CSS 4 configurado em @theme inline de app/globals.css, Framer Motion e Lucide. Guias locais de Next consultados antes da implementação. Dados centralizados em app/lib/brand.ts. NEXT_PUBLIC_SITE_URL deve receber o domínio real; sem domínio, imagens sociais absolutas não são habilitadas.
 
 ## Brand Commitments
-Logo BD original em marfim, dourado e bronze; fundo carvão derivado e superfícies claras para leitura. Cinzel acompanha as serifas romanas da marca; Montserrat acompanha os materiais institucionais das sócias. Preservar integralmente os três PNGs anexados. As imagens de apresentação contêm informações biográficas da época de produção; não extrapolar suas idades ou tempo de experiência para novos textos. Proveniência e SHA-256 em .impeccable/asset-origins.json.
+Logo BS original rosé, cobre, marfim e marrom. Títulos Cormorant Garamond, leitura Montserrat. Cabeçalho claro preserva a legibilidade da assinatura escura do logo; hero e rodapé em marrom profundo. Fotos e logo são cópias integrais dos três anexos, com SHA-256 e origem em .impeccable/asset-origins.json. Não inventar e-mail, inscrição profissional, formação, experiência ou horários. A atuação familiarista consta no logo; os temas de serviço são conteúdo institucional dessa área, sem alegação de titulação.
 
 ## Evidence on Hand
-Nome: Botinha & Diniz Advocacia. Telefone (31) 99591-7890; WhatsApp 5531995917890. Endereço: Av. São Paulo, nº 608 — Loja 4, Nova Esperança, Ibirité — MG, 32400-460; Ibirité Mall. Instagram @botinhadiniz.advocacia. Google: nota 5,0 e 75 avaliações conforme material fornecido, sem consulta ao vivo; CID 16514638860687317371 fornecido nos links do usuário.
+Nome: Bruna Soares — Advocacia e Consultoria Jurídica. Telefone (37) 99863-5592; WhatsApp 5537998635592. Rua Rafael Gonçalves Tomé, 118 — Centro, Piumhi — MG, 37925-000. Instagram @advbrunascalves. Nota 5,0 e 60 avaliações conforme material fornecido, sem integração ao vivo. CID 13549779888401519733 presente no link enviado pela cliente.
 
-Dra. Priscila Botinha: sócia, advogada e administradora, especialista em Inventários e Direito Imobiliário. Dra. Kethelen Diniz: sócia, advogada, escritora e gestora empresarial; especialista em Direito Constitucional, Direito Privado, Direito de Família e Direito Previdenciário. Fontes: apresentações anexadas.
-
-Depoimentos: trechos literais de Luiz Fernando, andre luiz de almeida luiz e Leonardo Henrique, do arquivo de avaliações enviado pelo usuário. Não há e-mail ou números de inscrição profissional informados diretamente; foram omitidos.
+Depoimentos literais do material de Bruna: Luana Roberta 2, Fabiana Teixeira Melo de Souza Alves e Elisa Teixeira. Um anexo contém avaliações de outro escritório; elas não pertencem à Bruna e não são utilizadas. E-mail, domínio real e número OAB não informados.
 
 ## Product Principles
-Clareza para decidir o próximo passo, cuidado com a história de cada pessoa, conteúdo institucional fiel ao material enviado e contato direto com as advogadas.
+Apresentar a profissional real, orientar o visitante sobre os temas do atendimento e tornar o primeiro contato simples.

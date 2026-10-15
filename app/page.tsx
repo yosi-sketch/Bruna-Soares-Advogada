@@ -16,9 +16,6 @@ import {
   MapPin,
   Menu,
   Scale,
-  Landmark,
-  Building2,
-  House,
   Users,
   HeartHandshake,
   ScrollText,
@@ -27,7 +24,7 @@ import {
   X,
 } from "lucide-react";
 import GlowingButton from "./components/GlowingButton";
-import { brand, team, testimonials, contact, whatsapp, telephone, whatsappFor, maps, reviews } from "./lib/brand";
+import { brand, testimonials, contact, whatsapp, telephone, whatsappFor, maps, reviews } from "./lib/brand";
 
 function WhatsAppMark({size = 16, strokeWidth = 1.8}: {size?: number; strokeWidth?: number}) { return <MessageCircle size={size} strokeWidth={strokeWidth} aria-hidden="true" />; }
 
@@ -47,40 +44,40 @@ const stagger: Variants = {
 
 const areas = [
   {
-    title: "Direito de Família", icon: Users,
-    summary: "Escuta e orientação nos momentos que envolvem sua família, seus vínculos e suas decisões.",
-    details: "Questões familiares pedem cuidado com as pessoas e com as particularidades de cada história. A equipe orienta sobre direitos e responsabilidades, analisa os documentos e acompanha as medidas judiciais ou extrajudiciais pertinentes à situação.",
-    topics: ["Divórcio e dissolução de união estável", "Guarda e convivência familiar", "Pensão alimentícia", "Partilha de bens"],
+    title: "Divórcio e separação", icon: Scale,
+    summary: "Orientação para encerrar um ciclo com clareza sobre suas escolhas e os próximos passos.",
+    details: "Cada separação tem uma história. O atendimento considera suas dúvidas, os vínculos familiares e os documentos para explicar as alternativas e organizar o encaminhamento da situação, de forma individual e sigilosa.",
+    topics: ["Análise da situação do casal","Organização dos documentos","Orientação sobre acordos","Acompanhamento dos encaminhamentos"],
   },
   {
-    title: "Inventários e Sucessões", icon: ScrollText,
-    summary: "Cuidado com a organização e a transmissão do patrimônio, respeitando a história de cada família.",
-    details: "O inventário exige atenção aos bens, aos documentos e às relações entre os herdeiros. O escritório analisa cada caso para explicar as alternativas e acompanhar a organização da sucessão, com clareza em cada etapa.",
-    topics: ["Inventário judicial e extrajudicial", "Orientação a herdeiros", "Partilha e documentação patrimonial", "Análise de questões sucessórias"],
+    title: "Guarda e convivência", icon: Users,
+    summary: "Cuidado com as relações familiares e atenção às necessidades de crianças e adolescentes.",
+    details: "Decisões que envolvem filhos pedem escuta e responsabilidade. A consulta permite compreender a rotina da família, as necessidades envolvidas e os pontos que precisam de orientação para organizar a guarda e a convivência.",
+    topics: ["Orientação sobre guarda","Organização da convivência familiar","Análise de acordos existentes","Acompanhamento de questões familiares"],
   },
   {
-    title: "Direito Imobiliário", icon: House,
-    summary: "Orientação para cuidar do seu imóvel, dos contratos e das relações que envolvem seu patrimônio.",
-    details: "A atuação imobiliária parte da análise dos documentos e das condições de cada imóvel. A equipe orienta sobre contratos, regularização e conflitos, buscando esclarecer os direitos, as obrigações e os próximos passos possíveis.",
-    topics: ["Análise de contratos de compra e venda", "Locação e relações entre as partes", "Regularização de imóveis", "Questões de posse e propriedade"],
+    title: "Pensão alimentícia", icon: HeartHandshake,
+    summary: "Clareza para tratar das necessidades de quem recebe e das responsabilidades de quem contribui.",
+    details: "O atendimento analisa o contexto familiar e os documentos para esclarecer dúvidas sobre alimentos. Cada demanda recebe atenção às necessidades das pessoas envolvidas e às particularidades da situação apresentada.",
+    topics: ["Orientação para fixação de alimentos","Análise de pedidos de revisão","Dúvidas sobre pagamentos","Organização de comprovantes e documentos"],
   },
   {
-    title: "Direito Previdenciário", icon: ScrollText,
-    summary: "Orientação sobre aposentadorias e benefícios do INSS, com atenção à sua trajetória e aos seus documentos.",
-    details: "Cada história de trabalho e contribuição merece uma análise individual. O escritório orienta sobre aposentadorias, salário-maternidade, pensão por morte e benefícios por incapacidade, desde a organização dos documentos até o acompanhamento da demanda.",
-    topics: ["Aposentadorias e análise de contribuições", "Benefícios por incapacidade e auxílio-acidente", "Salário-maternidade e pensão por morte", "Análise de benefícios negados pelo INSS"],
+    title: "União estável", icon: HeartHandshake,
+    summary: "Orientação sobre a vida em comum, a formalização da relação e as decisões de cada casal.",
+    details: "Compreender os aspectos jurídicos da relação ajuda o casal a tomar decisões informadas. A consulta considera a história, os documentos e os objetivos apresentados para orientar sobre formalização, reconhecimento ou dissolução da união.",
+    topics: ["Formalização da união estável","Orientação sobre reconhecimento","Dissolução da união","Análise de documentos e acordos"],
   },
   {
-    title: "Direito Cível", icon: Scale,
-    summary: "Orientação em contratos, responsabilidade civil e conflitos que envolvem pessoas e patrimônio.",
-    details: "O atendimento cível considera os fatos e documentos de cada relação para orientar sobre direitos, obrigações e formas de resolução do conflito. O escritório atua na análise preventiva e no acompanhamento de demandas judiciais e extrajudiciais.",
-    topics: ["Elaboração e análise de contratos", "Responsabilidade civil e reparação de danos", "Cobranças e obrigações", "Soluções judiciais e extrajudiciais"],
+    title: "Partilha de bens", icon: ScrollText,
+    summary: "Atenção ao patrimônio construído e às particularidades de cada relação familiar.",
+    details: "A organização do patrimônio exige uma análise cuidadosa da relação e dos documentos. O atendimento esclarece dúvidas sobre a partilha no contexto da separação e orienta sobre os caminhos adequados ao caso.",
+    topics: ["Levantamento de bens e documentos","Análise do contexto patrimonial","Orientação sobre acordos de partilha","Acompanhamento da demanda"],
   },
   {
-    title: "Direito Constitucional", icon: Landmark,
-    summary: "Análise de questões que envolvem garantias constitucionais e a proteção dos seus direitos.",
-    details: "A Constituição orienta a proteção de direitos fundamentais. O escritório analisa os fatos e documentos para esclarecer as garantias aplicáveis e avaliar as medidas adequadas às particularidades de cada demanda.",
-    topics: ["Orientação sobre direitos fundamentais", "Análise de garantias constitucionais", "Questões envolvendo atos do poder público", "Avaliação das medidas cabíveis ao caso"],
+    title: "Consultoria em Direito de Família", icon: MessageCircle,
+    summary: "Uma conversa para compreender sua situação antes de tomar uma decisão importante.",
+    details: "A consultoria é um espaço para apresentar sua história, esclarecer dúvidas e compreender os aspectos jurídicos de uma questão familiar. A partir da análise individual, são explicadas as possibilidades e os documentos necessários para os próximos passos.",
+    topics: ["Esclarecimento de dúvidas familiares","Análise individual da situação","Orientação preventiva","Planejamento dos próximos passos"],
   },
 ];
 
@@ -172,22 +169,22 @@ export default function Home() {
       <main className="bg-ivory text-ink">
         <div ref={contentRef}>
         <a href="#inicio" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-sm focus:bg-white focus:p-4 focus:text-ink">Ir para o conteúdo</a>
-        <header className="brand-header sticky top-0 z-40 border-b border-brand-300/20 bg-brand-950 text-brand-100">
-          <div className="mx-auto flex h-[104px] max-w-7xl items-center justify-between gap-5 px-5 sm:h-[120px] sm:px-8 lg:px-12">
+        <header className="brand-header sticky top-0 z-40 border-b border-brand-800/10 bg-ivory text-ink">
+          <div className="mx-auto flex h-[96px] max-w-7xl items-center justify-between gap-5 px-5 sm:h-[112px] sm:px-8 lg:px-12">
             <a
               href="#inicio"
-              aria-label="Botinha & Diniz Advocacia — início"
+              aria-label="Bruna Soares Advocacia — início"
               onClick={closeMenu}
               className="shrink-0"
             >
               <Image
                 src={brand.logo}
-                width={1774}
-                height={887}
+                width={1998}
+                height={787}
                 alt={brand.businessName}
                 preload
-                className="h-auto w-[176px] sm:w-[208px]"
-                sizes="(max-width: 640px) 176px, 208px"
+                className="h-auto w-[195px] min-[360px]:w-[215px] sm:w-[260px]"
+                sizes="(max-width: 359px) 195px, (max-width: 640px) 215px, 260px"
               />
             </a>
             <nav
@@ -215,8 +212,8 @@ export default function Home() {
                 href={contact}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="WhatsApp da Botinha & Diniz Advocacia"
-                className="grid size-10 place-items-center rounded-full border border-brand-300/40 text-brand-200 transition-colors hover:border-brand-300 hover:text-brand-300"
+                aria-label="WhatsApp da Dra. Bruna Soares"
+                className="grid size-11 place-items-center rounded-full border border-brand-800/20 text-brand-800 transition-colors hover:border-brand-700 hover:text-brand-700"
               >
                 <WhatsAppMark size={17} strokeWidth={1.7} />
               </a>
@@ -234,7 +231,7 @@ export default function Home() {
               aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
               aria-expanded={menuOpen}
               aria-controls="mobile-navigation"
-              className="grid size-11 place-items-center rounded-sm border border-brand-300/40 lg:hidden"
+              className="grid size-11 shrink-0 place-items-center rounded-sm border border-brand-300/40 lg:hidden"
               onClick={() => setMenuOpen((open) => !open)}
             >
               {menuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -251,7 +248,7 @@ export default function Home() {
                 transition={{ duration: 0.22 }}
                 className="absolute inset-x-0 top-full overflow-hidden border-b border-ink/10 bg-ivory px-6 lg:hidden"
               >
-                <div className="mx-auto flex max-h-[calc(100dvh-104px)] max-w-7xl flex-col gap-1 overflow-y-auto py-4 sm:max-h-[calc(100dvh-120px)]">
+                <div className="mx-auto flex max-h-[calc(100dvh-96px)] max-w-7xl flex-col gap-1 overflow-y-auto py-4 sm:max-h-[calc(100dvh-112px)]">
                   {[
                     ["Início", "#inicio"],
                     ["Atuação", "#atuacao"],
@@ -296,16 +293,16 @@ export default function Home() {
             >
               <motion.h1
                 variants={reveal}
-                className="max-w-[720px] font-display text-[2.4rem] leading-[1.16] tracking-[-0.025em] text-ivory sm:text-[3.3rem] lg:text-[3.65rem]"
+                className="max-w-[720px] font-display text-[3.25rem] leading-[1.04] tracking-[-0.025em] text-ivory sm:text-[4.4rem] lg:text-[4.8rem]"
               >
-                Direito com clareza.{" "}
-                <span className="text-brand-300">Cuidado com você.</span>
+                Sua família merece{" "}
+                <span className="text-brand-300">cuidado. Você, clareza.</span>
               </motion.h1>
               <motion.p
                 variants={reveal}
                 className="mt-7 max-w-xl text-[15px] leading-7 text-ink-soft sm:text-base sm:leading-8"
               >
-                Sua família, seu patrimônio e sua história merecem atenção. Na Botinha & Diniz Advocacia, você encontra escuta e orientação jurídica para compreender seus direitos e decidir os próximos passos, em Ibirité, Minas Gerais.
+                Nos momentos que transformam sua família, ter orientação faz diferença. Com a Dra. Bruna Soares, você encontra escuta e cuidado para compreender seus direitos e decidir os próximos passos. Advocacia familiarista em Piumhi, Minas Gerais.
               </motion.p>
               <motion.div
                 variants={reveal}
@@ -317,7 +314,7 @@ export default function Home() {
                   size="lg"
                   className="rounded-sm"
                 >
-                  <WhatsAppMark size={17} /> Converse com as advogadas
+                  <WhatsAppMark size={17} /> Converse com a Dra. Bruna
                 </GlowingButton>
                 <a
                   href="#atuacao"
@@ -355,23 +352,22 @@ export default function Home() {
                 delay: 0.16,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="relative mx-auto w-full max-w-[460px] lg:ml-auto lg:mr-0"
+              className="relative mx-auto w-full max-w-[360px] sm:max-w-[400px] lg:ml-auto lg:mr-0"
             >
               <figure className="hero-signature">
-              <div className="px-5 py-10 sm:px-8 sm:py-16">
                 <Image
-                  src={brand.logo}
-                  alt="Monograma BD e assinatura Botinha & Diniz Advocacia em marfim e dourado"
-                  width={1774}
-                  height={887}
-                  sizes="(max-width: 640px) 80vw, 396px"
+                  src={brand.portrait}
+                  alt="Dra. Bruna Soares sentada em seu escritório"
+                  width={730}
+                  height={837}
+                  preload
+                  sizes="(max-width: 640px) 90vw, 400px"
                   className="h-auto w-full"
                 />
-              </div>
-              <figcaption className="flex flex-col gap-2 border-t border-brand-300/25 px-5 pb-7 pt-6 text-center text-sm leading-6 text-brand-100">
-                <span className="font-display text-lg text-brand-300">Duas trajetórias. Um compromisso.</span>
-                <span>Atenção à sua história, em cada etapa.</span>
-              </figcaption>
+                <figcaption className="flex flex-col gap-2 border-t border-brand-300/25 px-5 pb-7 pt-6 text-center leading-6 text-brand-100">
+                  <span className="font-display text-3xl text-brand-300">Dra. Bruna Soares</span>
+                  <span className="text-xs tracking-[0.1em]">Advogada familiarista</span>
+                </figcaption>
               </figure>
             </motion.div>
           </div>
@@ -420,13 +416,13 @@ export default function Home() {
             >
               <Heading
 
-                description="Das relações familiares ao cuidado com o patrimônio, conheça as áreas em que podemos orientar você."
+                description="Relações, recomeços e decisões importantes. Orientação em Direito de Família para cuidar do que faz parte da sua história."
               >
-                Compromisso com o que é{" "}
-                <span className="text-brand-700">seu por direito.</span>
+                Cuidado com os vínculos.{" "}
+                <span className="text-brand-700">Atenção aos seus direitos.</span>
               </Heading>
               <p className="max-w-[250px] pb-1 text-xs leading-6 text-ink-soft">
-                Conheça nossas áreas de atuação e converse com a equipe sobre a sua situação.
+                Encontre o assunto sobre o qual deseja conversar. Cada história recebe uma análise individual.
               </p>
             </motion.div>
             <motion.div
@@ -477,30 +473,20 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="sobre" className="scroll-mt-24 bg-white py-20 sm:py-28 lg:py-32">
-          <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-            <div className="grid gap-7 lg:grid-cols-2 lg:gap-20">
-              <Heading>Conheça quem cuida da <span className="text-brand-700">sua história.</span></Heading>
-              <div>
-                <p className="max-w-xl text-[15px] leading-7 text-ink-soft">A Botinha & Diniz Advocacia reúne as trajetórias de Priscila Botinha e Kethelen Diniz. Em Ibirité, o escritório oferece orientação nas questões que envolvem a família, o patrimônio e os direitos de cada pessoa.</p>
-                <p className="mt-4 max-w-xl text-[15px] leading-7 text-ink-soft">O atendimento começa pela escuta. A partir da análise de cada situação, as advogadas explicam os caminhos possíveis, com atenção individual, respeito e sigilo.</p>
-              </div>
+        <section id="sobre" className="scroll-mt-28 bg-white py-20 sm:py-28 lg:py-32">
+          <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24 lg:px-12">
+            <figure className="mx-auto w-full max-w-[390px] lg:mx-0">
+              <Image src={brand.aboutImage} alt="Bruna Soares em seu escritório, junto à biblioteca jurídica" width={651} height={844} sizes="(max-width: 640px) 90vw, 390px" className="h-auto w-full" />
+              <figcaption className="border-b border-brand-800/20 py-5 text-sm text-ink-soft">Um atendimento próximo, com respeito à sua história.</figcaption>
+            </figure>
+            <div>
+              <Heading>Direito de Família com <span className="text-brand-700">um olhar humano.</span></Heading>
+              <h3 className="mt-7 font-display text-3xl text-brand-800">Dra. Bruna Soares</h3>
+              <p className="mt-2 text-xs font-medium tracking-[0.08em] text-ink-soft">Advogada familiarista · Piumhi, MG</p>
+              <p className="mt-6 max-w-xl text-[15px] leading-7 text-ink-soft">Por trás de uma questão familiar, existe uma história que merece ser ouvida. À frente da Bruna Soares — Advocacia e Consultoria Jurídica, a Dra. Bruna acolhe suas dúvidas e orienta cada passo com atenção às pessoas envolvidas.</p>
+              <p className="mt-4 max-w-xl text-[15px] leading-7 text-ink-soft">Em Piumhi, Minas Gerais, o atendimento une escuta, sigilo e explicações acessíveis. Um espaço para entender sua situação, conhecer os caminhos possíveis e tomar decisões com mais clareza.</p>
+              <a href={contact} target="_blank" rel="noopener noreferrer" className="group mt-8 inline-flex min-h-11 items-center gap-2 border-b border-brand-700/40 py-2 text-sm font-semibold text-brand-800 transition-colors hover:text-brand-700">Conheça o atendimento <ArrowUpRight size={16} /></a>
             </div>
-            <div className="mt-12 grid gap-12 md:grid-cols-2 md:gap-10 lg:gap-16">
-              {team.map((member) => (
-                <figure key={member.name} className="min-w-0">
-                  <div className="flex aspect-[722/769] items-center bg-brand-950">
-                    <Image src={member.image} alt={member.alt} width={member.width} height={member.height} sizes="(max-width: 767px) 100vw, (max-width: 1279px) 45vw, 552px" className="h-auto w-full" />
-                  </div>
-                  <figcaption className="border-b border-ink/15 pb-7 pt-6">
-                    <h3 className="font-display text-2xl text-brand-800 sm:text-[1.75rem]">{member.name}</h3>
-                    <p className="mt-2 text-xs font-medium leading-6 text-ink-soft">{member.role}</p>
-                    <p className="mt-4 max-w-xl text-sm leading-7 text-ink-soft">{member.bio}</p>
-                  </figcaption>
-                </figure>
-              ))}
-            </div>
-            <a href={contact} target="_blank" rel="noopener noreferrer" className="group mt-8 inline-flex min-h-11 items-center gap-2 border-b border-brand-700/40 py-2 text-sm font-semibold text-brand-800 transition-colors hover:text-brand-700">Converse com a nossa equipe <ArrowUpRight size={16} /></a>
           </div>
         </section>
 
@@ -509,7 +495,7 @@ export default function Home() {
             <Heading
 
               light
-              description="Uma decisão sobre sua família, seu patrimônio ou sua aposentadoria começa com informação. Conheça os próximos passos com uma orientação que considera a sua realidade."
+              description="Decisões sobre sua família merecem tempo, informação e cuidado. Conheça os próximos passos com uma orientação que considera a sua realidade."
             >
               Clareza para compreender cada{" "}
               <span className="text-brand-200">etapa.</span>
@@ -558,9 +544,9 @@ export default function Home() {
             <div className="divide-y divide-ink/15 border-y border-ink/15">
               {[
                 ["Como funciona o primeiro contato?", `Envie uma mensagem pelo WhatsApp ou ligue para ${brand.phone}. Conte brevemente sua situação para receber informações sobre o atendimento e os documentos iniciais necessários.`],
-                ["Onde fica o escritório?", `Estamos no ${brand.building}, na ${brand.address}. Entre em contato para combinar sua visita.`],
-                ["Meu benefício foi negado. Posso conversar com a equipe?", "Sim. Informe qual benefício você solicitou e separe a resposta recebida do INSS, caso tenha acesso a ela. A equipe poderá explicar como funciona a análise individual da sua situação."],
-                ["Quais documentos devo separar?", "Envie um resumo da situação pelo WhatsApp. Conforme a área, podem ser necessários contratos, notificações, comprovantes, documentos de trabalho ou respostas do INSS. A equipe orientará quais documentos são pertinentes ao seu caso."],
+                ["Onde fica o escritório?", `O escritório fica na ${brand.address}. Entre em contato para combinar sua visita.`],
+                ["Posso tirar dúvidas sobre uma questão familiar?", "Sim. Conte brevemente o que está acontecendo e quais são suas dúvidas. A Dra. Bruna explicará como funciona a consulta e a análise individual da sua situação."],
+                ["Quais documentos devo separar?", "Envie um resumo da situação pelo WhatsApp. Conforme a situação, podem ser necessários documentos pessoais, certidões, comprovantes ou acordos anteriores. A Dra. Bruna orientará quais documentos são pertinentes ao seu caso."],
               ].map(([question, answer]) => (
                 <details key={question} className="group py-6">
                   <summary className="cursor-pointer text-base font-semibold text-ink marker:text-brand-700">{question}</summary>
@@ -577,7 +563,7 @@ export default function Home() {
         >
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
-              <Heading description="Relatos de clientes sobre o atendimento da Botinha & Diniz Advocacia, publicados no Google.">
+              <Heading description="Relatos de clientes sobre o atendimento da Dra. Bruna Soares, publicados no Google.">
                 Confiança que se{" "}
                 <span className="text-brand-700">compartilha.</span>
               </Heading>
@@ -608,7 +594,7 @@ export default function Home() {
             </div>
             <div className="mt-7 flex flex-col justify-between gap-5 sm:flex-row sm:items-center">
               <p className="max-w-xl text-xs leading-6 text-ink-soft">
-                Trechos de avaliações no Google. Consulte o perfil para ler os relatos completos e as avaliações atuais.
+                Nota e quantidade de avaliações conforme o material fornecido. Consulte o perfil no Google para ler os relatos completos e os dados atuais.
               </p>
               <a
                 href={reviews}
@@ -631,7 +617,7 @@ export default function Home() {
             <div>
               <Heading
 
-                description="Converse com as advogadas sobre sua demanda e receba orientações para iniciar o atendimento em Ibirité."
+                description="Converse com a Dra. Bruna sobre sua situação e receba informações para iniciar o atendimento em Piumhi."
               >
                 Um primeiro contato com{" "}
                 <span className="text-brand-700">tranquilidade.</span>
@@ -643,7 +629,7 @@ export default function Home() {
                   size="lg"
                   className="rounded-sm"
                 >
-                  <WhatsAppMark size={17} /> Converse com as advogadas
+                  <WhatsAppMark size={17} /> Converse com a Dra. Bruna
                 </GlowingButton>
                 <a href={telephone} className="inline-flex min-h-11 items-center gap-2 text-sm text-brand-700 hover:text-brand-800"><Phone size={16} /> Ligue: {brand.phone}</a>
                 <a href={brand.instagram} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 py-2 text-sm text-brand-700 hover:text-brand-800"><Camera size={16} /> {brand.instagramHandle}</a>
@@ -656,10 +642,10 @@ export default function Home() {
                   <MapPin size={21} strokeWidth={1.6} />
                 </span>
                 <div>
-                  <h3 className="font-display text-2xl text-ink">Nosso escritório em Ibirité</h3>
+                  <h3 className="font-display text-2xl text-ink">Nosso escritório em Piumhi</h3>
                 </div>
               </div>
-              <p className="mt-6 flex items-center gap-2 text-sm font-semibold text-brand-700"><Building2 size={16} aria-hidden="true" /> {brand.building}</p>
+              <p className="mt-6 text-sm font-semibold text-brand-700">Bruna Soares · Advocacia e Consultoria Jurídica</p>
               <address className="mt-2 max-w-md not-italic text-[14px] leading-7 text-ink-soft">
                 {brand.address}
               </address>
@@ -702,18 +688,18 @@ export default function Home() {
         <footer className="brand-footer bg-brand-950 px-5 py-12 text-brand-100 sm:px-8 lg:px-12">
           <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-[1.1fr_0.9fr_1fr]">
             <div>
-              <div className="inline-flex px-3 py-2">
+              <div className="inline-flex bg-ivory px-4 py-3">
                 <Image
                   src={brand.logo}
-                  width={1774}
-                  height={887}
+                  width={1998}
+                  height={787}
                   alt={brand.businessName}
-                  className="h-auto w-[200px]"
-                  sizes="200px"
+                  className="h-auto w-[250px]"
+                  sizes="250px"
                 />
               </div>
               <p className="mt-4 max-w-xs text-xs leading-6 text-ink-soft">
-                Advocacia em Ibirité, Minas Gerais. Orientação para cuidar da sua família, do seu patrimônio e dos seus direitos.
+                Advocacia e consultoria jurídica em Piumhi, Minas Gerais. Cuidado com sua família e clareza sobre seus direitos.
               </p>
             </div>
             <div>

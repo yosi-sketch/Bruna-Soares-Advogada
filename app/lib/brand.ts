@@ -1,51 +1,31 @@
 // Dados institucionais e avaliações do material fornecido; sem integração ao vivo.
 export const brand = {
-  name: "Botinha & Diniz Advocacia",
-  businessName: "Botinha & Diniz Advocacia",
-  phone: "(31) 99591-7890",
-  phoneDigits: "5531995917890",
-  address: "Av. São Paulo, nº 608 — Loja 4, Nova Esperança, Ibirité — MG, 32400-460",
-  building: "Ibirité Mall",
-  location: "Ibirité · Minas Gerais",
-  logo: "/botinha-diniz-logo.png",
-  googleReviewCount: 75,
+  name: "Bruna Soares",
+  businessName: "Bruna Soares — Advocacia e Consultoria Jurídica",
+  phone: "(37) 99863-5592",
+  phoneDigits: "5537998635592",
+  address: "Rua Rafael Gonçalves Tomé, 118 — Centro, Piumhi — MG, 37925-000",
+  location: "Piumhi · Minas Gerais",
+  logo: "/bruna-soares-logo.png",
+  portrait: "/bruna-soares-retrato.png",
+  aboutImage: "/bruna-soares-sobre.png",
+  googleReviewCount: 60,
   googleRating: "5,0",
-  instagram: "https://www.instagram.com/botinhadiniz.advocacia/",
-  instagramHandle: "@botinhadiniz.advocacia",
+  instagram: "https://www.instagram.com/advbrunascalves/",
+  instagramHandle: "@advbrunascalves",
 };
-
-export const team = [
-  {
-    name: "Dra. Priscila Botinha",
-    role: "Sócia · Advogada e administradora",
-    image: "/priscila-botinha.png",
-    width: 722,
-    height: 769,
-    bio: "Especialista em Inventários e Direito Imobiliário. Sua formação em Direito e Administração contribui para um olhar atento às questões que envolvem o patrimônio e as decisões de cada família.",
-    alt: "Apresentação institucional da Dra. Priscila Botinha, sócia, advogada e administradora, especialista em Inventários e Direito Imobiliário.",
-  },
-  {
-    name: "Dra. Kethelen Diniz",
-    role: "Sócia · Advogada, escritora e gestora empresarial",
-    image: "/kethelen-diniz.png",
-    width: 793,
-    height: 785,
-    bio: "Especialista em Direito Constitucional, Direito Privado, Direito de Família e Direito Previdenciário. Une a atuação jurídica ao interesse pelo estudo, pela escrita e pela publicação de artigos.",
-    alt: "Apresentação institucional da Dra. Kethelen Diniz, sócia, advogada, escritora e gestora empresarial, com suas áreas de especialização.",
-  },
-];
 
 // Trechos literais dos depoimentos enviados, com autoria preservada.
 export const testimonials = [
-  { name: "Luiz Fernando", text: "Sua competência, organização e dedicação trouxeram muita segurança durante todo o acompanhamento, sempre com clareza nas informações e agilidade nas demandas." },
-  { name: "andre luiz de almeida luiz", text: "Quero agradecer à advogada Kethelen pela dedicação e profissionalismo no meu processo. Ela sempre me manteve informado de cada movimentação, transmitindo confiança e transparência." },
-  { name: "Leonardo Henrique", text: "Atendimento excelente! Muito bom o local, a educação de todos e a atenção ao ouvir o cliente! Além do grande conhecimento sobre a questão cível e previdenciário e também regulamentação de imóveis." },
+  { name: "Luana Roberta 2", text: "A Bruna é uma excelente advogada! Além de muito profissional, é atenciosa e confiável.Sou grata por sua paciência e orientação jurídica, que me trouxe paz e segurança!" },
+  { name: "Fabiana Teixeira Melo de Souza Alves", text: "Excelente profissional. Atenciosa e com explicações claras. Deixa o cliente a par de tudo o que está acontecendo no processo." },
+  { name: "Elisa Teixeira", text: "Excelente profissionais, muito capacitadas e principalmente um olhar humano sobre os processos. Eu tirei muitas dúvidas, tive muita ajuda, por isso recomendo esse escritório." },
 ];
 
 export function whatsappFor(subject?: string) {
   const message = subject
-    ? `Olá, equipe Botinha & Diniz! Gostaria de conversar sobre ${subject}.`
-    : "Olá, equipe Botinha & Diniz! Gostaria de orientação sobre o meu caso.";
+    ? `Olá, Dra. Bruna! Gostaria de conversar sobre ${subject}.`
+    : "Olá, Dra. Bruna! Gostaria de orientação sobre o meu caso.";
   return `https://wa.me/${brand.phoneDigits}?text=${encodeURIComponent(message)}`;
 }
 
@@ -53,4 +33,4 @@ export const whatsapp = whatsappFor();
 export const contact = whatsapp;
 export const telephone = `tel:+${brand.phoneDigits}`;
 export const maps = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${brand.businessName}, ${brand.address}`)}`;
-export const reviews = "https://www.google.com/maps?cid=16514638860687317371";
+export const reviews = "https://www.google.com/maps?cid=13549779888401519733";

@@ -1,29 +1,29 @@
 [
   {
-    "path": "public/botinha-diniz-logo.png",
-    "origin": "C:/Users/matheus/Desktop/Logotipo Jurídico Botinha & Diniz.png",
-    "width": 1774,
-    "height": 887,
+    "path": "public/bruna-soares-logo.png",
+    "origin": "C:/Users/matheus/Downloads/Logotipo Luxuoso Bruna Soares Advocacia.png",
+    "width": 1998,
+    "height": 787,
     "transformation": "Cópia binária integral do anexo, sem edição.",
-    "sha256": "e981799116f42eba404905a41b83818165d91b2f4e663fe4d73cc65f692bf3f0",
+    "sha256": "0dc67226ab747a4c15638cae701433b7160f3196a4a2a9628ab441b9fab24849",
     "identicalToSource": true
   },
   {
-    "path": "public/kethelen-diniz.png",
-    "origin": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-5daa330f-f32d-4f3e-8379-f96891e31842.png",
-    "width": 793,
-    "height": 785,
+    "path": "public/bruna-soares-retrato.png",
+    "origin": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-73694038-3ff5-4f20-a0e4-b8f861b30dab.png",
+    "width": 730,
+    "height": 837,
     "transformation": "Cópia binária integral do anexo, sem edição.",
-    "sha256": "4c5699d3b63900a2e5918dc87f596e938e37275148809ef9af366741e16bbbae",
+    "sha256": "219b98b471106e56c2e7aae69e653c10e7325cf0a2f3266f1c994b75c09cc3b1",
     "identicalToSource": true
   },
   {
-    "path": "public/priscila-botinha.png",
-    "origin": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-dc4caf42-0f19-44b6-93f3-548c35d2b5f8.png",
-    "width": 722,
-    "height": 769,
+    "path": "public/bruna-soares-sobre.png",
+    "origin": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-2bd8107a-2778-4838-b251-9f2384a44990.png",
+    "width": 651,
+    "height": 844,
     "transformation": "Cópia binária integral do anexo, sem edição.",
-    "sha256": "fa81ee82088baac28e196a584c13c26e4ec47e1fcd4f03fc04ef3fc60c198ff5",
+    "sha256": "7d54b94568dcd5c843ecdec5b04ae2a957b9805ee0b80c9666f7ca0085d2f4c3",
     "identicalToSource": true
   }
 ]
